@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navigation from "./components/Navigation/Navigation";
+import Footer from "./components/Footer/Footer";
 
-import Home from "./page"
-import Home2 from "./page1"
+
 
 const inter = Inter({ subsets: ["latin", "cyrillic"] });
 
@@ -20,11 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <Home/>
-        <Home2/>
-        </main>
-        </body>
+        <Navigation />
+        {children}
+        <Footer/>
+      </body>
     </html>
   );
 }
