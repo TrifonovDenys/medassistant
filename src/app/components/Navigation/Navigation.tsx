@@ -25,8 +25,6 @@ const Navigation = () => {
   const handleCloseDropdown = () => {
     setDropdownOpen(false);
   };
-
-  console.log(dropdownOpen);
   return (
     <header>
       <nav className='pt-4 pb-4 bg-white'>
@@ -37,7 +35,7 @@ const Navigation = () => {
           <li onMouseEnter={handleOpenDropdown} onMouseLeave={handleCloseDropdown}>
             <Link href='/pages/educational_class'>Навчальні класи</Link>
             <div className={`absolute bg-white w-full z-10 left-0 p-4 border border-gray-300 rounded-md shadow-md transition-all duration-300 ease-in-out ${dropdownOpen ? '' : 'hidden'}`}>
-              <ul className='flex flex-wrap'>
+              <ul className='flex flex-wrap gap-4'>
                 {edClasses.map((el) => (
                   <li key={el.id}>
                     <Link href={`/educational_class/${el.id}`}>{el.name}</Link>
