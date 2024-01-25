@@ -18,8 +18,9 @@ export const metadata: Metadata = {
 	icons: {
 		icon: "/favicon.ico",
 		shortcut: "/favicon-16x16.png",
-		apple: "/apple-touch-icon.png",
+		apple: "/apple-icon-57x57.png",
 	},
+	manifest: "/manifest.json"
 };
 
 export const viewport: Viewport = {
@@ -49,7 +50,6 @@ export default function RootLayout({
 						<main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
 							{children}
 						</main>
-						
 						<Footer/>
 					</div>
 				</Providers>

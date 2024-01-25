@@ -1,3 +1,4 @@
+import { SiYoutube, SiFacebook, SiTiktok, SiYoutubeshorts  } from "react-icons/si";
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
@@ -89,13 +90,17 @@ export const siteConfig = {
 		}
 	],
 	
-	links: {
-		github: "https://github.com/nextui-org/nextui",
-		twitter: "https://twitter.com/getnextui",
-		docs: "https://nextui.org",
-		discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev"
-	},
+	links: [
+		// github: "https://github.com/nextui-org/nextui",
+		// twitter: "https://twitter.com/getnextui",
+		// docs: "https://nextui.org",
+		// discord: "https://discord.gg/9b6yyZKmH4",
+		// sponsor: "https://patreon.com/jrgarciadev",
+		{label: "Youtube", href: "https://www.youtube.com/channel/UCD7STJqRgZbXm5oLANSZ1Vw", icon: SiYoutube, size: 30,},
+		{label: "Youtubeshorts", href: "https://www.youtube.com/@medassistent-channel/shorts", icon: SiYoutubeshorts, size: 21,},
+		{label: "Facebook", href: "https://www.facebook.com/MedAssistant.School/", icon: SiFacebook, size: 22,},
+		{label: "Tiktok", href: "https://www.tiktok.com/@medassistant", icon: SiTiktok, size: 21,},
+	],
 	classes: [
     { id: 1, name: 'Навчальний клас гіпертоніка і кардіохворого', icons: '', },
     { id: 2, name: 'Навчальний клас неврології, психіатрії та наркології', icons: '', },
