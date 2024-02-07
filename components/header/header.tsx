@@ -14,8 +14,10 @@ import { ThemeSwitch } from '@/components/theme-switch';
 import { TwitterIcon, GithubIcon, DiscordIcon, HeartFilledIcon, SearchIcon } from '@/components/icons';
 
 import { MedAsisstant } from '@/components/icons';
+import { NavigationMenuDemo } from './components/navbar';
+import AuthNav from './components/authNav';
 
-export const Navbar = () => {
+export const Header = () => {
   const searchInput = (
     <Input
       aria-label='Search'
@@ -37,11 +39,12 @@ export const Navbar = () => {
 
   return (
     <NextUINavbar maxWidth='xl' position='sticky'>
+       <MedAsisstant />
       {/* Logo + name */}
-      <NavbarContent className='basis-1/5 sm:basis-full' justify='start'>
+      {/* <NavbarContent className='basis-1/5 sm:basis-full' justify='start'>
         <NavbarBrand as='li' className='gap-3 max-w-fit'>
           <NextLink className='flex justify-start items-center gap-1' href='/'>
-            <MedAsisstant />
+           
             <p className='font-bold text-inherit'>МедАсистент</p>
           </NextLink>
         </NavbarBrand>
@@ -58,7 +61,9 @@ export const Navbar = () => {
             </NavbarItem>
           ))}
         </ul>
-      </NavbarContent>
+      </NavbarContent> */}
+    <NavigationMenuDemo/>
+
 
       {/* Pc version */}
       <NavbarContent className='hidden sm:flex basis-1/5 sm:basis-full' justify='end'>
@@ -70,9 +75,11 @@ export const Navbar = () => {
           ))}
           <ThemeSwitch />
         </NavbarItem>
-        <NavbarItem className='hidden lg:flex'>{searchInput}</NavbarItem>
+        <NavbarItem className='hidden lg:flex'>
+          <AuthNav />
+        </NavbarItem>
       </NavbarContent>
-
+ 
       {/* mob version */}
 
       <NavbarContent className='sm:hidden basis-1 pl-4' justify='end'>
@@ -100,6 +107,8 @@ export const Navbar = () => {
                 {<item.icon size={30} className='text-default-500' />}
               </Link>
             ))}
+
+            
           </div>
         </div>
       </NavbarMenu>
