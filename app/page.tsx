@@ -21,7 +21,7 @@ export default function Home() {
 					Beautiful, fast and modern React UI library.
 				</h2>
 			</div>
-
+		
 			{/* <div className="flex gap-3">
 				<Link
 					isExternal

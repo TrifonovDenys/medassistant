@@ -5,9 +5,11 @@ import { fontSans } from "@/config/fonts";
 import { Providers } from "./providers";
 import { Link } from "@nextui-org/link";
 
+
+
 import clsx from "clsx";
-import Footer from "@/components/footer";
 import { Header } from "@/components/header/header";
+import Footer from "@/components/footer";
 export const metadata: Metadata = {
 	title: {
 		default: siteConfig.name,
