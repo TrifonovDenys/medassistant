@@ -39,7 +39,7 @@ export const Header = () => {
 
   return (
     <NextUINavbar maxWidth='xl' position='sticky'>
-       <MedAsisstant />
+      <MedAsisstant />
       {/* Logo + name */}
       {/* <NavbarContent className='basis-1/5 sm:basis-full' justify='start'>
         <NavbarBrand as='li' className='gap-3 max-w-fit'>
@@ -62,8 +62,7 @@ export const Header = () => {
           ))}
         </ul>
       </NavbarContent> */}
-    <NavigationMenuDemo/>
-
+      <NavigationMenuDemo />
 
       {/* Pc version */}
       <NavbarContent className='hidden sm:flex basis-1/5 sm:basis-full' justify='end'>
@@ -79,7 +78,7 @@ export const Header = () => {
           <AuthNav />
         </NavbarItem>
       </NavbarContent>
- 
+
       {/* mob version */}
 
       <NavbarContent className='sm:hidden basis-1 pl-4' justify='end'>
@@ -107,8 +106,6 @@ export const Header = () => {
                 {<item.icon size={30} className='text-default-500' />}
               </Link>
             ))}
-
-            
           </div>
         </div>
       </NavbarMenu>

@@ -37,7 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={clsx('min-h-screen bg-background font-sans antialiased', fontSans.variable)}>
         <Providers themeProps={{ attribute: 'class', defaultTheme: 'dark' }}>
           <Header />
-          <div className='relative flex flex-col h-screen mx-auto max-w-7xl pt-16 px-6'>
+          <div className='relative flex flex-col h-screen mx-auto max-w-7xl px-6'>
             <main className='container flex-grow'>{children}</main>
             <Footer />
           </div>
