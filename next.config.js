@@ -14,3 +14,14 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+
+
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   experimental: {
+//     turbo: true,
+//   },
+//   reactStrictMode: true,
+// };
+
+// module.exports = nextConfig;

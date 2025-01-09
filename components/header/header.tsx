@@ -13,7 +13,7 @@ import clsx from 'clsx';
 import { ThemeSwitch } from '@/components/theme-switch';
 import { TwitterIcon, GithubIcon, DiscordIcon, HeartFilledIcon, SearchIcon } from '@/components/icons';
 
-import { MedAsisstant } from '@/components/icons';
+import { MedAsisstant, NewLogo } from '@/components/icons';
 import { NavigationMenuDemo } from './components/navbar';
 import AuthNav from './components/authNav';
 
@@ -40,6 +40,7 @@ export const Header = () => {
   return (
     <NextUINavbar maxWidth='xl' position='sticky'>
       <MedAsisstant />
+      {/* <NewLogo /> */}
       {/* Logo + name */}
       {/* <NavbarContent className='basis-1/5 sm:basis-full' justify='start'>
         <NavbarBrand as='li' className='gap-3 max-w-fit'>

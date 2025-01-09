@@ -1,9 +1,9 @@
-import { title } from "@/components/primitives";
-
+import { subtitle, title } from "@/components/primitives";
+import { Button } from "@nextui-org/button";
+import { button as buttonStyles } from '@nextui-org/theme';
+import { Icon } from "@iconify/react";
 export default function AboutPage() {
 	return (
-		<div>
-			<h1 className={title()}>About</h1>
-		</div>
+		<div>HI</div>
 	);
 }

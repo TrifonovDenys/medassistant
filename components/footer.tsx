@@ -1,24 +1,37 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from './ui/button';
 import { Icon } from '@iconify/react';
+import { subtitle } from './primitives';
+// import { Image } from './ui/image';
+// Image
+import Aam from '@/public/logos/logo_AAM.png'
+import Bio from '@/public/logos/logo_Biostrategy.png'
+import MedA from '@/public/logos/Logo_Medaccount.png'
+import Image from 'next/image';
+
 const Footer = () => {
   return (
     <footer className='container px-4 pt-[4.5rem] xl:pt-[7rem] lg:pt-[7rem] md:pt-[7rem] pb-[1.75rem]'>
       <div className='flex flex-wrap justify-between mx-[-15px] mt-[-30px] xl:mt-0 lg:mt-0'>
         <div className='xl:w-4/12 lg:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full'>
           <div className='widget'>
-            <Image className='!mb-4' src='/images/logo.png' alt='image' width={200} height={200} />
-            <h2 className='h2 !mb-[.75rem] xl:text-[1.3rem] text-[calc(1.255rem_+_0.06vw)] !leading-[1.35]'>Вступити в Асоціацію</h2>
+            <h2 className={subtitle()}>об'єднання Українська Асоціація
+              Лікарів Амбулаторної Медицини</h2>
             <p className='lead !text-[0.9rem] leading-[1.65] font-medium mb-5'>
               Об`єднані досвідом, спрямовані на майбутнє. Медицина рухається вперед разом з нами!
             </p>
+            <div className='flex justify-between items-center gap-3'>
+              <a className='height-[100px]' href="https://test-amb.vercel.app/"><Image className='!mb-4' src={Aam} alt='AAM' height={100} /></a>
+              <a className='height-[100px]' href="https://biostrategy.com.ua/"><Image className='!mb-4' src={Bio} alt='Biostrategy' height={100} /></a>
+              <a className='height-[100px]' href="https://medaccount.com.ua/"><Image className='!mb-4' src={MedA} alt='Medaccount' height={100} /></a>
+            </div>
             <Button variant='outline' size={'sm'} asChild={true}>
               <a href='https://medaccount.com.ua/membership'>Приєднатися!</a>
             </Button>
           </div>
         </div>
-        <div className='md:w-4/12 lg:w-2/12 xl:w-2/12 w-full flex-[0_0_auto] px-[15px] max-w-full  mt-[30px] xl:mt-0 lg:mt-0'>
+        <div className='md:w-6/12 lg:w-2/12 xl:w-2/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px] xl:mt-0 lg:mt-0'>
           <div className='widget'>
             <h3 className='widget-title !mb-3 !tracking-[-0.03em]'>Потрібна допомога?</h3>
             <ul className='pl-0 list-none !mb-0'>
@@ -47,7 +60,7 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-            <div className='!mt-4 flex flex-row flex-wrap gap-4'>
+            {/* <div className='!mt-4 flex flex-row flex-wrap gap-4'>
               <a
                 href='https://drive.google.com/file/d/1UZOjNgzFPw5ir72fQ2L3ktxfbhGrFTDs/view?usp=sharing'
                 target='_blank'
@@ -56,7 +69,7 @@ const Footer = () => {
                 <Image className='h-12 object-contain' src='/images/partners/logo-absolyut-ukr.png' alt='image' width={200} height={200} />
                 <h3 className='h2 !mb-[.75rem] text-xs !leading-[1.35]'>Юридичний висновок</h3>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className='md:w-4/12 lg:w-2/12 xl:w-2/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px] xl:mt-0 lg:mt-0'>
@@ -69,8 +82,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li className='mt-[0.35rem]'>
-                <Link className='text-[#60697b] hover:text-primary' href='/info/charity'>
-                  Благодійність
+                <Link className='text-[#60697b] hover:text-primary' href='/documents'>
+                  Документація
                 </Link>
               </li>
               <li className='mt-[0.35rem]'>
@@ -84,12 +97,12 @@ const Footer = () => {
                 </Link>
               </li>
               <li className='mt-[0.35rem]'>
-                <Link className='text-[#60697b] hover:text-primary' href='/info/partners'>
+                <Link className='text-[#60697b] hover:text-primary' href='/speakers'>
                   Партнери
                 </Link>
               </li>
             </ul>
-            <div className='!mt-4 flex flex-row flex-wrap gap-4'>
+            {/* <div className='!mt-4 flex flex-row flex-wrap gap-4'>
               <a
                 href='https://drive.google.com/file/d/1OL6YBM-REUDNUzTCbZG_J8WtEFKzhPM5/view?usp=sharing'
                 target='_blank'
@@ -98,7 +111,7 @@ const Footer = () => {
                 <Image className='h-12 object-contain' src='/images/partners/logo-bakertilly.png' alt='image' width={200} height={200} />
                 <h3 className='h2 !mb-[.75rem] text-xs !leading-[1.35]'>Висновок міжнародного аудиту</h3>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
 
