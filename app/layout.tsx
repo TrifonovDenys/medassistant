@@ -4,7 +4,7 @@ import { siteConfig } from '@/config/site';
 import { fontSans } from '@/config/fonts';
 import { Providers } from './providers';
 import { Link } from '@nextui-org/link';
-
+import ScrollToTop from '@/components/ScrollToTop';
 import clsx from 'clsx';
 import { Header } from '@/components/header/header';
 import Footer from '@/components/footer';
@@ -37,8 +37,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={clsx('min-h-screen bg-background font-sans antialiased', fontSans.variable)}>
         <Providers themeProps={{ attribute: 'class', defaultTheme: 'dark' }}>
           <Header />
-          <div className='relative flex flex-col h-screen mx-auto max-w-7xl px-6'>
+          <div className='relative flex flex-col h-screen mx-auto items-center max-w-7xl px-6'>
             <main className='container flex-grow'>{children}</main>
+            <ScrollToTop />
             <Footer />
           </div>
         </Providers>

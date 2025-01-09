@@ -64,4 +64,13 @@
     --input: 0 0% 14.9%;
     --ring: 0 0% 83.1%;
   }
+  ::selection {
+    background: #7828c8; /* Safari */
+    color: aliceblue;
+  }
+
+  ::-moz-selection {
+    background: #7828c8; /* Firefox */
+    color: aliceblue;
+  }
 }

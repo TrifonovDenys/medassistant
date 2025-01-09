@@ -5,26 +5,26 @@ const Hero = () => {
   return (
     <div className='relative py-24 md:py-36 ml-auto'>
       <div className='text-center mx-auto'>
-        <h1 className={title({ color: 'violet', size: 'lg' })}>Медасистент</h1>
-        <p className={subtitle({ class: 'mt-4' })}>
+        <h1 className={title({ color: 'violet', size: 'xl' })}>Медасистент</h1>
+        <p className={subtitle({ class: 'mt-4 md:px-40 px-2' })}>
           є технічним співроганізатором Асоціації Лікарів Амбулаторної Медицини та організовує науково-практичні заходи з метою підвищення
           кваліфікації та розвитку медичних фахівців.
         </p>
-        <p className={subtitle()}>
+        <p className={subtitle({ class: 'md:px-40 px-2' })}>
           Наша спільна ініціатива включає в себе організацію широкого спектру науково-практичних заходів, які охоплюють різноманітні тематики та
           спеціальності в області медицини. В рамках цих заходів, які ми разом втілюємо, тисячі лікарів з усієї України мають можливість активно брати
           участь у дискусіях, обмінюватися досвідом та вивчати новітні досягнення у своїй галузі.
         </p>
         <div className='mt-8 flex flex-wrap justify-center gap-3'>
-          <Link href='/events' className={buttonStyles({ color: 'primary', radius: 'full', variant: 'shadow' })}>
+          <Link href='/events' className={buttonStyles({ color: 'secondary', radius: 'full', variant: 'shadow' })}>
             Відео-матеріали
           </Link>
 
-          <Link href='/news' className={buttonStyles({ color: 'primary', variant: 'solid', radius: 'full' })}>
+          <Link href='/news' className={buttonStyles({ color: 'secondary', variant: 'solid', radius: 'full' })}>
             Спікери
           </Link>
 
-          <Link href='/events' className={buttonStyles({ color: 'primary', variant: 'flat', radius: 'full' })}>
+          <Link href='/events' className={buttonStyles({ color: 'secondary', variant: 'flat', radius: 'full' })}>
             Переглянути Заходи
           </Link>
         </div>
