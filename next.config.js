@@ -5,6 +5,8 @@ const nextConfig = {
     config.plugins.push(
       require('unplugin-icons/webpack').default({
         compiler: 'jsx',
+        collections: ['mdi', 'heroicons', 'fa'], // Include multiple icon sets
+            scale: 1,
         jsx: 'react',
       }),
     );
