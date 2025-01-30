@@ -1,10 +1,10 @@
-import { Navbar as NextUINavbar, NavbarContent, NavbarMenu, NavbarMenuToggle, NavbarBrand, NavbarItem, NavbarMenuItem } from '@nextui-org/navbar';
-import { Button } from '@nextui-org/button';
-import { Kbd } from '@nextui-org/kbd';
-import { Link } from '@nextui-org/link';
-import { Input } from '@nextui-org/input';
+import { Navbar as NextUINavbar, NavbarContent, NavbarMenu, NavbarMenuToggle, NavbarBrand, NavbarItem, NavbarMenuItem } from '@heroui/react';
+import { Button } from '@heroui/react';
+import { Kbd } from '@heroui/react';
+import { Link } from '@heroui/react';
+import { Input } from '@heroui/react';
 
-import { link as linkStyles } from '@nextui-org/theme';
+import { link as linkStyles } from '@heroui/react';
 
 import { siteConfig } from '@/config/site';
 import NextLink from 'next/link';
@@ -14,7 +14,7 @@ import { ThemeSwitch } from '@/components/theme-switch';
 import { TwitterIcon, GithubIcon, DiscordIcon, HeartFilledIcon, SearchIcon } from '@/components/icons';
 
 import { MedAsisstant, NewLogo } from '@/components/icons';
-import { NavigationMenuDemo } from './components/navbar';
+import { NavBar } from './components/navbar';
 import AuthNav from './components/authNav';
 
 export const Header = () => {
@@ -63,7 +63,7 @@ export const Header = () => {
           ))}
         </ul>
       </NavbarContent> */}
-      <NavigationMenuDemo />
+      <NavBar />
 
       {/* Pc version */}
       <NavbarContent className='hidden sm:flex basis-1/5 sm:basis-full' justify='end'>

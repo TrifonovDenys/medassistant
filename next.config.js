@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    turbo: true,
+  },
   reactStrictMode: true,
   webpack(config) {
     config.plugins.push(

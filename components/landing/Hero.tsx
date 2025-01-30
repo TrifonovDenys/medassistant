@@ -1,6 +1,7 @@
-import { button as buttonStyles } from '@nextui-org/theme';
-import Link from 'next/link';
+import { Button } from '@heroui/react';
 import { title, subtitle } from '@/components/primitives';
+import { cn } from '@/lib/utils';
+import { buttonVariants } from '../ui/button';
 const Hero = () => {
   return (
     <div className='relative py-24 md:py-36 ml-auto'>
@@ -16,17 +17,17 @@ const Hero = () => {
           участь у дискусіях, обмінюватися досвідом та вивчати новітні досягнення у своїй галузі.
         </p>
         <div className='mt-8 flex flex-wrap justify-center gap-3'>
-          <Link href='/events' className={buttonStyles({ color: 'secondary', radius: 'full', variant: 'shadow' })}>
+
+          <Button color="secondary" variant="shadow" radius="full">
             Відео-матеріали
-          </Link>
-
-          <Link href='/news' className={buttonStyles({ color: 'secondary', variant: 'solid', radius: 'full' })}>
+          </Button>
+          <Button color="secondary" variant="solid" radius="full">
             Спікери
-          </Link>
-
-          <Link href='/events' className={buttonStyles({ color: 'secondary', variant: 'flat', radius: 'full' })}>
+          </Button>
+          <Button color="secondary" variant="faded" radius="full">
             Переглянути Заходи
-          </Link>
+          </Button>
+
         </div>
       </div>
     </div>

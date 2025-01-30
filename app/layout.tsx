@@ -3,7 +3,6 @@ import { Metadata, Viewport } from 'next';
 import { siteConfig } from '@/config/site';
 import { fontSans } from '@/config/fonts';
 import { Providers } from './providers';
-import { Link } from '@nextui-org/link';
 import ScrollToTop from '@/components/ScrollToTop';
 import clsx from 'clsx';
 import { Header } from '@/components/header/header';

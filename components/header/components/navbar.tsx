@@ -1,8 +1,8 @@
 "use client"
- 
+
 import * as React from "react"
 import Link from "next/link"
- 
+
 import { cn } from "@/lib/utils"
 // import { Icons } from "@/components/icons"
 import {
@@ -14,24 +14,27 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
- 
-import {components} from '@/config/site'
 
-export function NavigationMenuDemo() {
+import { MedAsisstant, NewLogo } from '@/components/icons';
+import { components } from '@/config/site'
+
+export function NavBar() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
-{/* Головна */}
+
+        {/* Головна */}
+
         <NavigationMenuItem>
           <Link href="/" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Головна
+              <MedAsisstant />
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
 
         {/* Спікери */}
-        
+
         <NavigationMenuItem>
           <Link href="/speakers" legacyBehavior passHref>
             <NavigationMenuTrigger>Спікери</NavigationMenuTrigger>
@@ -69,23 +72,22 @@ export function NavigationMenuDemo() {
         </NavigationMenuItem>
 
         {/* Навчальні класи */}
-        
+
         <NavigationMenuItem>
           <Link href="/educ" legacyBehavior passHref>
             <NavigationMenuTrigger>Навчальні класи</NavigationMenuTrigger>
           </Link>
-          
+
           <NavigationMenuContent>
             <ul className="grid w-[75vw] gap-3 p-4 md:w-[85vw] md:grid-cols-3 lg:w-[60vw] ">
               {components.map((component) => (
 
-                  
-                  <ListItem
+                <ListItem
                   key={component.title}
                   title={component.title}
                   href={component.href}
 
-                  >
+                >
                   {/* <component.icons/> */}
                   {component.description}
                 </ListItem>
@@ -96,7 +98,7 @@ export function NavigationMenuDemo() {
         </NavigationMenuItem>
 
         {/* Для лікарів */}
-        
+
         <NavigationMenuItem>
           <Link href="/doctors" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -110,11 +112,11 @@ export function NavigationMenuDemo() {
     </NavigationMenu>
   )
 }
- 
+
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
   React.ComponentPropsWithoutRef<"a">
-  >(({ className, title, children, ...props }, ref) => {
+>(({ className, title, children, ...props }, ref) => {
   console.log(children)
   return (
     <li>

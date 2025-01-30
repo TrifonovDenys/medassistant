@@ -1,5 +1,5 @@
 import { subtitle, title } from '@/components/primitives';
-import { button as buttonStyles } from '@nextui-org/theme';
+import { Button } from '@heroui/react';
 import { Icon } from '@iconify/react';
 
 export default function DocumentsPage() {
@@ -14,12 +14,9 @@ export default function DocumentsPage() {
           </div>
           <h2 className={subtitle()}>Статут</h2>
           <p className='!my-3'>Визначає її правовий статус, структуру, цілі діяльності, права та обов`язки учасників, а також порядок управління.</p>
-          <a
-            href='https://medassistant.info/wp-content/uploads/2022/01/%D0%A1%D1%82%D0%B0%D1%82%D1%83%D1%82.pdf'
-            className={buttonStyles({ color: 'primary', variant: 'flat', radius: 'full' })}
-          >
+          <Button color="primary" variant="solid" radius="full">
             Дізнатися більше
-          </a>
+          </Button>
         </div>
 
         <div className='xl:w-4/12 lg:w-4/12 md:w-4/12 w-full flex-[0_0_auto] px-[15px] md:px-[20px] lg:px-[20px] xl:px-[35px] mt-[40px] max-w-full'>
@@ -31,12 +28,9 @@ export default function DocumentsPage() {
             Сукупність етичних принципів та правил, яких дотримуються учасники освітнього процесу (студенти, викладачі, науковці) під час навчання,
             досліджень та інших академічних заходів.
           </p>
-          <a
-            href='https://medassistant.info/wp-content/uploads/2022/01/%D0%9F%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F-%D0%BF%D1%80%D0%BE-%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D1%87%D0%BD%D1%83-%D0%B4%D0%BE%D0%B1%D1%80%D0%BE%D1%87%D0%B5%D1%81%D0%BD%D1%96%D1%81%D1%82%D1%8C-.pdf'
-            className={buttonStyles({ color: 'success', variant: 'flat', radius: 'full' })}
-          >
+          <Button color="success" variant="solid" radius="full">
             Дізнатися більше
-          </a>
+          </Button>
         </div>
       </div>
       <div className='flex flex-wrap justify-evenly mx-[-15px] md:mx-[-20px] lg:mx-[-20px] xl:mx-[-35px] mt-[-40px] !mb-[4.5rem] xl:!mb-[6rem] lg:!mb-[6rem] md:!mb-[6rem] !text-center'>
@@ -49,12 +43,9 @@ export default function DocumentsPage() {
             Встановлює правила та процедури, спрямовані на запобігання ситуаціям, коли особи, які організовують або беруть участь у заходах підвищення
             кваліфікації, можуть приймати рішення, які суперечать їхнім особистим інтересам або інтересам організацій, з якими вони пов`язані.
           </p>
-          <a
-            href='https://medassistant.info/wp-content/uploads/2022/01/%D0%9F%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F-%D0%BF%D1%80%D0%BE-%D0%B7%D0%B0%D0%BF%D0%BE%D0%B1%D1%96%D0%B3%D0%B0%D0%BD%D0%BD%D1%8F-%D0%BA%D0%BE%D0%BD%D1%84%D0%BB%D1%96%D0%BA%D1%82%D1%83.pdf'
-            className={buttonStyles({ color: 'warning', variant: 'flat', radius: 'full' })}
-          >
+          <Button color="warning" variant="solid" radius="full">
             Дізнатися більше
-          </a>
+          </Button>
         </div>
         <div className='xl:w-4/12 lg:w-4/12 md:w-4/12 w-full flex-[0_0_auto] px-[15px] md:px-[20px] lg:px-[20px] xl:px-[35px] mt-[40px] max-w-full'>
           <div className='flex justify-center pointer-events-none mb-5'>
@@ -65,12 +56,9 @@ export default function DocumentsPage() {
             Описує, як саме перевіряються знання, вміння та навички медичних працівників після проходження ними навчальних програм. Цей документ
             затверджується організацією, яка проводить навчання.
           </p>
-          <a
-            href='https://medassistant.info/wp-content/uploads/2022/01/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%8E-%D0%BE%D1%86%D1%96%D0%BD%D1%8E%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F-%D0%BD%D0%B0%D0%B1%D1%83%D1%82%D0%B8%D1%85-%D0%B7%D0%BD%D0%B0%D0%BD%D1%8C.pdf'
-            className={buttonStyles({ color: 'danger', variant: 'flat', radius: 'full' })}
-          >
+          <Button color="danger" variant="solid" radius="full">
             Дізнатися більше
-          </a>
+          </Button>
         </div>
       </div>
     </div>
